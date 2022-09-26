@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>IKEA Mom Finder</title>
+    <link rel="icon" type="image/png" href="https://media.discordapp.net/attachments/835115484596142097/1023979247171293265/favicon.png?width=205&height=205" />
+  </head>
+  <body style="background-color:#00264d;font-family:NotoSans;">
+    <style>
+      /* Add a black background color to the top navigation */
+      @font-face { font-family: NotoSans; src: url('NotoSans-Regular.ttf'); }
+      .topnav {
+        background-color: #000d1a;
+        overflow: hidden;
+        padding: 0px 0px;
+        position: absolute;
+        right:0;
+        left:0;
+        top:0
+      }
+
+      /* Style the links inside the navigation bar */
+      .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      /* Change the color of links on hover */
+        .topnav a:hover {
+          background-color: #e6b800;
+          color: black;
+      }
+
+      /* Add a color to the active/current link */
+        .topnav a.active {
+          background-color: #000d1a;
+          color: white;
+      }
+      .parallax {
+        /* The image used */
+        background-image: url("https://media.discordapp.net/attachments/835115484596142097/1023226487479996499/img14.png?width=1171&height=659");
+
+        /* Set a specific height */
+        min-height: 800px;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .parallax3 {
+        /* The image used */
+        background-image: url("https://media.discordapp.net/attachments/835115484596142097/1022929322543161424/unknown.png?width=974&height=570");
+
+        /* Set a specific height */
+        min-height: 500px;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .parallax4 {
+        /* The image used */
+        background-image: url("https://media.discordapp.net/attachments/835115484596142097/1023117756289261588/img4.png?width=1171&height=659");
+
+        /* Set a specific height */
+        min-height: 500px;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .parallax5 {
+        /* The image used */
+        background-image: url("https://media.discordapp.net/attachments/835115484596142097/1023120187626627192/img5.png?width=1171&height=659");
+
+        /* Set a specific height */
+        min-height: 500px;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .parallax6 {
+        /* The image used */
+        background-image: url("https://media.discordapp.net/attachments/835115484596142097/1023121370097397830/img6.png?width=1171&height=659");
+
+        /* Set a specific height */
+        min-height: 500px;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .parallax7 {
+        /* The image used */
+        background-image: url("https://media.discordapp.net/attachments/835115484596142097/1023122891245621298/img7.png?width=1171&height=659");
+
+        /* Set a specific height */
+        min-height: 500px;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .parallax8 {
+        /* The image used */
+        background-image: url("https://media.discordapp.net/attachments/835115484596142097/1023124093085691904/img8.png?width=1171&height=659");
+
+        /* Set a specific height */
+        min-height: 500px;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .parallax9 {
+        /* The image used */
+        background-image: url("https://media.discordapp.net/attachments/835115484596142097/1023125715224383499/img9.png?width=1171&height=659");
+
+        /* Set a specific height */
+        min-height: 500px;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .parallax10 {
+        /* The image used */
+        background-image: url("https://media.discordapp.net/attachments/835115484596142097/1023126661660688434/img10.png?width=1171&height=659");
+
+        /* Set a specific height */
+        min-height: 500px;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .parallax11 {
+        /* The image used */
+        background-image: url("https://media.discordapp.net/attachments/835115484596142097/1023132040285134949/img11.png?width=1171&height=659");
+
+        /* Set a specific height */
+        min-height: 500px;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .parallax12 {
+        /* The image used */
+        background-image: url("https://media.discordapp.net/attachments/835115484596142097/1023134859532714004/img12.png?width=1171&height=659");
+
+        /* Set a specific height */
+        min-height: 500px;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .parallax13 {
+        /* The image used */
+        background-image: url("https://cdn.discordapp.com/attachments/835115484596142097/1023158961643470848/img13.png");
+
+        /* Set a specific height */
+        min-height: 500px;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .collapsible {
+        background-color: #e6b800;
+        color: #000000;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: center;
+        outline: none;
+        font-size: 24px;
+      }
+
+      /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+      .collapsible:hover {
+        background-color: #D6BD5A;
+      }
+      .active {
+        background-color: #e6b800;
+      }
+      /* Style the collapsible content. Note: hidden by default */
+      .content {
+        padding: 0 18px;
+        background-color: white;
+        max-height: 0;
+        text-align:center;
+        font-size: 16px;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+      }
+      .ccstatement {
+            padding: 0;
+            margin:0;
+            text-align: center;
+            background: #2c2f33;
+            color: white;
+            font-size: 20px;
+      }
+      a:link {
+        color: white;
+        background-color: transparent;
+        text-decoration: none;
+      }
+
+      a:visited {
+        color: white;
+        background-color: transparent;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: white;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+
+      a:active {
+        color: white;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+      .parallax2 {
+        /* The image used */
+        background-image: url("https://media.discordapp.net/attachments/835115484596142097/1023115703366197288/img3.png?width=1171&height=659");
+
+        /* Set a specific height */
+        min-height: 500px;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+      .heading {
+        color:white;
+        text-allign:center;
+      }
+      .parallax3 {
+        /* The image used */
+        background-image: url("https://media.discordapp.net/attachments/835115484596142097/1023115703366197288/img3.png?width=1171&height=659");
+
+        /* Set a specific height */
+        min-height: 500px;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .container {
+  margin: 25px;
+  width: 350px;
+  height: 200px;
+  outline: dashed 1px black;
+}
+
+.child {
+  width: 50px;
+  text-align:center
+
+}
+
+    </style>
+
+    <header></header>
+    <main>
+      <div class="topnav">
+        <a href="index.html" style="max-width:5%"><image src="https://media.discordapp.net/attachments/835115484596142097/1021789244064288870/unknown.png?width=600&height=401" style="max-width: 100%;height: auto;"></a>
+        <a href="momFinder.html" style="position:relative;top:0;bottom:0">Mom<br> Finder</a>
+        <a href="sponsorUs.html" style="position:relative;top:0;bottom:0">Sponsor<br>Us</a>
+        <a href="about.html" style="position:relative;top:0;bottom:0">About<br>Us</a>
+      </div>
+
+      <div class=parallax></div>
+
+      <br><br><br><br>
+
+      <div style="allign-items:center;text-align:center">
+        <div class="child">
+        <h1 style="text-align:center;color:white;margin-bottom: 0;display:inline">Are you ready?</h1>
+        <h2 style="text-align:center;color:white">Investing helps us create a product that you like. Learn more about what becoming an investor means:</h2>
+
+        </div>
+      </div>
+
+      <button type="button" class="collapsible">Being part of a powerful community...</button>
+      <div class="content">
+        <p>...By becoming an investor, we as good people, promise you to bring you, the best product possible. You will be given early access to the product and will be able to find your Mom early.​</p>
+      </div>
+      </div>
+      <br>
+      <button type="button" class="collapsible">Valuing your money...</button>
+      <div class="content">
+        <p>You will not lose your time or money! We will make sure that we return double within three years of your investment.​</p>
+      </div>
+      </div>
+      <br>
+      <button type="button" class="collapsible">Enjoying secure shopping...</button>
+      <div class="content">
+        <p>You can finally shop safely in IKEA, without worrying about losing your Mom. It will be safe for you to bring your kids to IKEA from now. Call our number for emergency IKEA Mom-Loss Support!​</p>
+      </div>
+      </div>
+      <br>
+      <h1 style="text-align:center;color:white">We got you interested?</h1>
+      <h2 style="text-align:center;color:white">Contact Us!</h2>
+      <a href="mailto:ikeamomfinder@gmail.com"><image style="display: block;margin-left: auto;margin-right: auto;width: 10%;" src="https://cdn.discordapp.com/attachments/835115484596142097/1023190299742318622/email.png"></a>
+      <p style="text-align:center;color:white"></p>
+      <br><br><br><br>
+
+      <div class="ccstatement">
+          <br>
+              <a href="index.html">- Home</a> <br>
+              <a href="momFinder.html">- Mom Finder</a> <br>
+              <a href="about.html">- About Us</a> <br>
+              <a href="sponsorUs.html">- Sponsor Us</a> <br>
+              <a href="disclaimer.html">- Policy</a> <br><br>
+          <a  style="ccstatement" rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
+        <br> <br>
+        <p style="ccstatement" class="ccstatement">IKEA Mom Finder Foundation</p>
+    </div>
+    </main>
+    <footer></footer>
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+    </script>
+  </body>
+</html>
